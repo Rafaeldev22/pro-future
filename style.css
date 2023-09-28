@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.video{
+
+    width: 139%;
+    height: 120%;
+    margin-left: -20vw;
+    margin-top: -5vh;
+    z-index: -99;
+}
+
+.nav-bar{
+    /* border: 2px solid red; */
+    /* background-color: black; */
+    height: 7%;
+    /* margin: 10px; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 150px;
+    backdrop-filter: blur(7px);
+}
+
+.links{
+    display: flex;
+    gap: 50px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    transition: .4s ease;
+}
+
+.active, a:hover{
+    color: violet;
+}
+
+.logo{
+    width: 100px;
+}
+
+.jogos-nintendo{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.43);
+    width: 50vw;
+    height: 80vh;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    overflow: auto;
+}
+
+.jogos-playstation{
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgba(0, 0, 0, 0.43);
+    width: 50vw;
+    height: 80vh;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 12px;
+    display: none;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    overflow: auto;
+}
+
+.jogos-sega{
+    border: 2px solid rgb(89, 0, 255);
+    background-color: rgba(0, 0, 0, 0.43);
+    width: 50vw;
+    height: 80vh;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 12px;
+    display: none;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    background-color: rgba(99, 99, 99, 0.427);
+    border-radius: 20px;
+    opacity: .1;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(182, 181, 181, 0.34);
+    border-radius: 20px;
+    opacity: .2;
+}
+
+.jogos-nintendo a{
+    transition: .2s ease;
+}
+
+.jogos-playstation a{
+    transition: .2s ease;
+}
+
+.jogos-sega a{
+    transition: .2s ease;
+}
+
+.jogo{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+    font-weight: 600;
+    width: 13vw;
+    height: 320px;
+    border-radius: 15px;
+}
+
+.jogo:hover{
+
+    border-radius: 0px;
+    border: 3px solid white;
+}
+
+
+
+/*Modal*/
+
+#fade {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* border: 1px solid yellow; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    /* border: 1px solid red; */
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 850px;
+    height: 495px;
+    max-width: 95%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: #fff; */
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+}
+
+#card-modal {
+    /* border: 2px solid red; */
+    width: 900px;
+    height: 595px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#fechar {
+    /* border: 1px solid red; */
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.4;
+    z-index: 99;
+    transition: 0.2s ease;
+}
+
+#fechar:hover {
+    opacity: 1;
+}
+
+#fade.hide,
+#card-modal.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.info {
+    color: red;
+    background-color: #ebebeb;
+    width: 300px;
+    height: 29px;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+    border-radius: 6px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+#fade,
+#card-modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.game{
+    border: 2px solid rgb(164, 164, 164);
+    margin-top: 8%;
+}
