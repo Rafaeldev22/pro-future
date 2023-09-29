@@ -56,7 +56,7 @@ body{
 }
 
 .jogos-nintendo{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     background-color: rgba(0, 0, 0, 0.43);
     width: 50vw;
     height: 80vh;
@@ -71,7 +71,7 @@ body{
 }
 
 .jogos-playstation{
-    border: 2px solid rgb(255, 0, 0);
+    /* border: 2px solid rgb(255, 0, 0); */
     background-color: rgba(0, 0, 0, 0.43);
     width: 50vw;
     height: 80vh;
@@ -86,7 +86,7 @@ body{
 }
 
 .jogos-sega{
-    border: 2px solid rgb(89, 0, 255);
+    /* border: 2px solid rgb(89, 0, 255); */
     background-color: rgba(0, 0, 0, 0.43);
     width: 50vw;
     height: 80vh;

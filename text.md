@@ -1,1 +1,0 @@
-<iframe src="https://www.retrogames.cc/embed/18202-robocop-vs-the-terminator-europe.html" width="600" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"></iframe>
