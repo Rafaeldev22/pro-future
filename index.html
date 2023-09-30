@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Pro-Future</title>
 </head>
 
-<body>
+<body class="animate__animated animate__fadeIn animated__duration-4s">
 
 
     <iframe class="video"
@@ -27,9 +28,7 @@
     </nav>
 
 
-    <!-- <a href="https://www.retrogames.cc/embed/28096-dragon-ball-z-supersonic-warriors-k-projectg.html" target="play" class="jogo" >clique</a> -->
-
-    <section class="jogos-nintendo" id="nintendo">
+    <section class="jogos-nintendo animate__animated animate__bounceInLeft" id="nintendo">
 
 
         <a href="https://www.retrogames.cc/embed/9123-marvel-vs-capcom-clash-of-super-heroes-980123-usa.html"
@@ -80,7 +79,7 @@
 
     </section>
 
-    <section class="jogos-playstation" id="playstation">
+    <section class="jogos-playstation animate__animated animate__bounceInLeft" id="playstation">
 
 
         <a href="https://www.retrogames.cc/embed/41504-castlevania-symphony-of-the-night.html"
@@ -119,7 +118,7 @@
 
     </section>
 
-    <section class="jogos-sega" id="sega">
+    <section class="jogos-sega animate__animated animate__bounceInLeft" id="sega">
 
 
         <a href="https://www.retrogames.cc/embed/17236-sonic-the-hedgehog-2-world-rev-a.html"
@@ -163,16 +162,18 @@
 
     <!-- seção de erro -->
 
-    <div class="aviso">
+    <div class="aviso animate__animated animate__fadeIn animated__duration-4s">
         <h3>Para uma melhor experiência acesse via Desktop!</h3>
     </div>
+
+    <!-- seção de erro -->
 
 
 
 
     <div id="fade" class="hide">
 
-        <div id="card-modal" class="hide">
+        <div id="card-modal" class="hide ">
             <img src="./img/fechar.png" alt="fechar" id="fechar">
             <iframe src="" width="900" height="450" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true"
                 mozallowfullscreen="true" scrolling="no" name="play" class="game"></iframe>
@@ -186,7 +187,7 @@
 
 
 
-    <script src="pag-jogos.js"></script>
+    <script src="./src/js/pag-jogos.js"></script>
 
 </body>
 

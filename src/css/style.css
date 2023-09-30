@@ -243,89 +243,84 @@ a:hover {
   margin-top: 8%;
 }
 
-.aviso{
-    display: none;
+.aviso {
+  display: none;
 }
 
 @media (max-width: 1440px) {
+  html,
+  body {
+    background-image: url("https://million-wallpapers.com/wallpapers/2/88/454070653018012/logo-of-companies-with-a-skull-on-a-dark-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    html,
-    body{
-        background-image: url('https://million-wallpapers.com/wallpapers/2/88/454070653018012/logo-of-companies-with-a-skull-on-a-dark-background.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  .jogos-nintendo {
+    margin-top: 1%;
+    margin-left: 15%;
+    width: 70vw;
+  }
 
-    .jogos-nintendo{
-        margin-left: 15%;
-        width: 70vw;
-    }
+  .jogos-playstation {
+    margin-top: 1%;
+    margin-left: 15%;
+    width: 70vw;
+  }
 
-    .jogos-playstation{
-        margin-left: 15%;
-        width: 70vw;
-    }
+  .jogos-sega {
+    margin-top: 1%;
+    margin-left: 15%;
+    width: 70vw;
+  }
 
-    .jogos-sega{
-        margin-left: 15%;
-        width: 70vw;
-    }
-
-
-    .video{
-        display: none;
-    }
+  .video {
+    display: none;
+  }
 
   .jogo {
     width: 17vw;
     margin-left: 3%;
   }
-
 }
 
-@media (max-width: 1024px){
-
-    .jogo{
-        width: 16vw;
-    }
-
+@media (max-width: 1024px) {
+  .jogo {
+    width: 16vw;
+  }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
+  html,
+  body {
+    background-image: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    html,
-    body{
-        background-image: none;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .aviso {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    font-family: arial;
+    font-weight: 600;
+    color: red;
+  }
 
-    .aviso{
-        display: flex;
-        padding: 20px;
-        text-align: center;
-        font-family: arial;
-        font-weight: 600;
-        color: red;
-    }
+  .jogos-nintendo {
+    display: none;
+  }
 
-    .jogos-nintendo{
-        display: none;
-    }
+  .jogos-playstation {
+    display: none;
+  }
 
-    .jogos-playstation{
-        display: none;
-    }
+  .jogos-sega {
+    display: none;
+  }
 
-    .jogos-sega{
-        display: none;
-    }
-
-    .nav-bar{
-        display: none;
-    }
-
-
+  .nav-bar {
+    display: none;
+  }
 }

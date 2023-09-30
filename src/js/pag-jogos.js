@@ -30,11 +30,13 @@ function fabrir(){
 snes.addEventListener('click', ()=>{
     jogosSnes.style.display = 'flex';
     jogosPLay.style.display = 'none';
+    jogosSega.style.display = 'none';
 })
 
 play.addEventListener('click', ()=>{
     jogosSnes.style.display = 'none';
     jogosPLay.style.display = 'flex';
+    jogosSega.style.display = 'none';
 })
 
 sega.addEventListener('click', ()=>{
