@@ -5,10 +5,14 @@
 }
 
 body {
-  /* border: 2px solid red; */
   width: 100vw;
   height: 100vh;
   background-color: black;
+}
+
+.selecionado {
+  border-bottom: 2px solid #ff005b;
+  border-right: 2px solid #ff005b;
 }
 
 .video {
@@ -20,43 +24,45 @@ body {
 }
 
 .nav-bar {
-  /* border: 2px solid red; */
-  /* background-color: black; */
   height: 7%;
-  /* margin: 10px; */
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 150px;
+  padding: 40px 150px;
   backdrop-filter: blur(7px);
+  background-color: #0000004c;
 }
 
 .links {
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 
 .links a {
   color: white;
   text-decoration: none;
+  border-radius: 10px;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+  padding: 10px;
   transition: 0.4s ease;
 }
 
 .active,
 a:hover {
-  color: violet;
+  border-bottom: 2px solid #ff005b;
+  border-right: 2px solid #ff005b;
 }
 
 .logo {
-  width: 100px;
+  width: 500px;
+  padding: 2vw;
+  opacity: 0.4;
 }
 
 .jogos-nintendo {
-  /* border: 2px solid white; */
   background-color: rgba(0, 0, 0, 0.43);
   width: 50vw;
   height: 80vh;
@@ -71,7 +77,6 @@ a:hover {
 }
 
 .jogos-playstation {
-  /* border: 2px solid rgb(255, 0, 0); */
   background-color: rgba(0, 0, 0, 0.43);
   width: 50vw;
   height: 80vh;
@@ -86,7 +91,6 @@ a:hover {
 }
 
 .jogos-sega {
-  /* border: 2px solid rgb(89, 0, 255); */
   background-color: rgba(0, 0, 0, 0.43);
   width: 50vw;
   height: 80vh;
@@ -103,6 +107,7 @@ a:hover {
 ::-webkit-scrollbar {
   background-color: rgba(99, 99, 99, 0.427);
   border-radius: 20px;
+  width: 10px;
   opacity: 0.1;
 }
 
@@ -125,7 +130,6 @@ a:hover {
 }
 
 .jogo {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,13 +158,11 @@ a:hover {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
-  /* border: 1px solid yellow; */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 5;
-  /* border: 1px solid red; */
 }
 
 #modal {
@@ -174,14 +176,12 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-color: #fff; */
   padding: 1.2rem;
   border-radius: 0.5rem;
   z-index: 10;
 }
 
 #card-modal {
-  /* border: 2px solid red; */
   width: 900px;
   height: 595px;
   position: relative;
@@ -192,7 +192,6 @@ a:hover {
 }
 
 #fechar {
-  /* border: 1px solid red; */
   position: absolute;
   cursor: pointer;
   top: 10px;
@@ -222,13 +221,11 @@ a:hover {
   font-weight: 600;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
-  /* text-align: center; */
   border-radius: 6px;
   margin-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 #fade,

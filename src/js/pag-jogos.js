@@ -8,6 +8,20 @@ const play = document.querySelector("#btn-play");
 const jogosPLay = document.querySelector("#playstation");
 const sega = document.querySelector("#btn-sega");
 const jogosSega = document.querySelector("#sega");
+const menus = document.querySelectorAll(".menu");
+
+
+menus.forEach(menu => {
+  menu.addEventListener("click", ()=> {
+
+    const menuSelecionado = document.querySelector(".menu.selecionado");
+
+    menuSelecionado.classList.remove("selecionado");
+
+    menu.classList.add("selecionado");
+
+  })
+})
 
 
 fechar.addEventListener("click", () => {
